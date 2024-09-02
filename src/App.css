@@ -1,38 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.products1-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .products-list {
+  display: flex;  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  width: 30%;
+}
+.product-image {
+  width: 100%;
+} */
+.image {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.allimage {
+  padding: 10px;
+  width: 22%;
+  min-height: 600px;
+  overflow-y: scroll;
+  /* border: 1px black solid; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.desciption {
+  width: 100%;
+  height: 20%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  padding-top: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.desciption h2 {
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desciption p {
+  text-wrap: wrap;
+  color: gray;
+  font-size: 15px;
+}
+.star {
+  display: flex;
+  justify-content: space-evenly;
 }

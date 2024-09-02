@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Products from "./components/Products";
+import "./App.css";
+import Products1 from "./components/Products1";
+import Counter from "./components/Counter";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Tand sanal bolgoh kinonii jagsaalt</h1>
+      <p>Adal yvdalt,tulaant</p>
+      <Products1 />
     </div>
   );
-}
+};
 
 export default App;
